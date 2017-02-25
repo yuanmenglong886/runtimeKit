@@ -80,7 +80,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/yuanmenglong886/runtimeKit.git", :commit => "01e2f2e779e83f195d74cc200f7a76ea6ebd2238" }
+  s.source       = { :git => "https://github.com/yuanmenglong886/runtimeKit.git", :commit => "04e01433a372d7753964816c2c0957d6d11dc3fa" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -91,7 +91,7 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "runtimeKit", "runtimeKit/**/*.{h,m}"
+  s.source_files  =  "Classes", "Classes/**/*.{h,m}","Classes/*.{h,m}", "runtimeKit/**/*.{h,m}", "runtimeKit/*.{h,m}","runtimeKit/runtimeKit.{h,m}" # "Classes/*.{h,m}"
   s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
