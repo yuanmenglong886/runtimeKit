@@ -1,6 +1,6 @@
 
 Pod::Spec.new do |s|
-  s.name         = "runtimeKit"
+  s.name         = "CLRuntimeKit"
   s.version      = "1.0.0"
   s.summary      = "基于runtime 封装的Framework"
   s.description  = <<-DESC
