@@ -2,15 +2,20 @@ PODS:
   - runtimeKit (1.0.0)
 
 DEPENDENCIES:
-  - runtimeKit
+  - runtimeKit (from `https://github.com/yuanmenglong886/runtimeKit.git`)
 
-SPEC REPOS:
-  https://github.com/yuanmenglong886/LibSpec:
-    - runtimeKit
+EXTERNAL SOURCES:
+  runtimeKit:
+    :git: https://github.com/yuanmenglong886/runtimeKit.git
+
+CHECKOUT OPTIONS:
+  runtimeKit:
+    :commit: 3583e6d2cfa49f23232cd5221266e3abe049b8f3
+    :git: https://github.com/yuanmenglong886/runtimeKit.git
 
 SPEC CHECKSUMS:
-  runtimeKit: 00ac34ad36452904df1c3d2333449a1bb6697605
+  runtimeKit: c2abea26c968ae490e45fd2fe3500fa3282b287b
 
-PODFILE CHECKSUM: 07b5c78f96a980656351fa178274347fd5d532a6
+PODFILE CHECKSUM: b46561615aa48ffba43c7b27f7dc4691f76ec636
 
 COCOAPODS: 1.6.1

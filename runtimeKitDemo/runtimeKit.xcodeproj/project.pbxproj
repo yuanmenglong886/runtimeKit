@@ -14,7 +14,6 @@
 		373328A21E6132BC00FE7F0A /* runtimeKit.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 373328A01E6132BC00FE7F0A /* runtimeKit.xcdatamodeld */; };
 		373328A41E6132BC00FE7F0A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 373328A31E6132BC00FE7F0A /* Assets.xcassets */; };
 		373328A71E6132BC00FE7F0A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 373328A51E6132BC00FE7F0A /* LaunchScreen.storyboard */; };
-		5ADC58C12273E82B00BA81D5 /* runtimeKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ADC58C02273E82B00BA81D5 /* runtimeKit.m */; };
 		5ADC58C922740C7300BA81D5 /* runtimeKit.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 5ADC58C822740C7300BA81D5 /* runtimeKit.xcconfig */; };
 		5ADC58CC22740D2000BA81D5 /* File.s in Sources */ = {isa = PBXBuildFile; fileRef = 5ADC58CB22740D2000BA81D5 /* File.s */; };
 		C91AC25363ABD8A689127341 /* libPods-runtimeKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FFDE8EBFD570A91F2A21E02 /* libPods-runtimeKit.a */; };
@@ -34,8 +33,6 @@
 		373328A61E6132BC00FE7F0A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		373328A81E6132BC00FE7F0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		570D20673929CCF1B43E41E0 /* Pods-runtimeKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-runtimeKit.release.xcconfig"; path = "Pods/Target Support Files/Pods-runtimeKit/Pods-runtimeKit.release.xcconfig"; sourceTree = "<group>"; };
-		5ADC58BF2273E82B00BA81D5 /* runtimeKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = runtimeKit.h; sourceTree = "<group>"; };
-		5ADC58C02273E82B00BA81D5 /* runtimeKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = runtimeKit.m; sourceTree = "<group>"; };
 		5ADC58C822740C7300BA81D5 /* runtimeKit.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = runtimeKit.xcconfig; sourceTree = "<group>"; };
 		5ADC58CA22740CB700BA81D5 /* Script.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = Script.sh; sourceTree = "<group>"; };
 		5ADC58CB22740D2000BA81D5 /* File.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = File.s; sourceTree = "<group>"; };
@@ -83,7 +80,6 @@
 		373328931E6132BC00FE7F0A /* runtimeKit */ = {
 			isa = PBXGroup;
 			children = (
-				5ADC58BE2273E82B00BA81D5 /* runtimeKit */,
 				373328971E6132BC00FE7F0A /* AppDelegate.h */,
 				373328981E6132BC00FE7F0A /* AppDelegate.m */,
 				3733289A1E6132BC00FE7F0A /* ViewController.h */,
@@ -114,16 +110,6 @@
 				570D20673929CCF1B43E41E0 /* Pods-runtimeKit.release.xcconfig */,
 			);
 			name = Pods;
-			sourceTree = "<group>";
-		};
-		5ADC58BE2273E82B00BA81D5 /* runtimeKit */ = {
-			isa = PBXGroup;
-			children = (
-				5ADC58BF2273E82B00BA81D5 /* runtimeKit.h */,
-				5ADC58C02273E82B00BA81D5 /* runtimeKit.m */,
-			);
-			name = runtimeKit;
-			path = ../../runtimeKit;
 			sourceTree = "<group>";
 		};
 		C0BBF3AB20110C9B51EA167F /* Frameworks */ = {
@@ -231,7 +217,6 @@
 			files = (
 				3733289C1E6132BC00FE7F0A /* ViewController.m in Sources */,
 				373328991E6132BC00FE7F0A /* AppDelegate.m in Sources */,
-				5ADC58C12273E82B00BA81D5 /* runtimeKit.m in Sources */,
 				373328961E6132BC00FE7F0A /* main.m in Sources */,
 				373328A21E6132BC00FE7F0A /* runtimeKit.xcdatamodeld in Sources */,
 				5ADC58CC22740D2000BA81D5 /* File.s in Sources */,

@@ -2,11 +2,10 @@
 source 'https://github.com/yuanmenglong886/LibSpec'
 
 #Public Specs
-source 'https://github.com/CocoaPods/Specs.git'
+#source 'https://github.com/CocoaPods/Specs.git'
 
 platform:ios,'8.0'
 target 'runtimeKit' do
-
-    pod 'runtimeKit'
-    #:path => '/Users/yuanmenglong/Desktop/workSpace/PodSpec/runtimeKit/runtimeKit.podspec'
+  pod 'runtimeKit', :git => 'https://github.com/yuanmenglong886/runtimeKit.git'
+  # pod 'runtimeKit' #,:path => '/Users/yuanmenglong/Desktop/workSpace/PodSpec/runtimeKit/runtimeKit.podspec'
 end
