@@ -15,6 +15,8 @@
 		373328A41E6132BC00FE7F0A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 373328A31E6132BC00FE7F0A /* Assets.xcassets */; };
 		373328A71E6132BC00FE7F0A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 373328A51E6132BC00FE7F0A /* LaunchScreen.storyboard */; };
 		5ADC58C12273E82B00BA81D5 /* runtimeKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ADC58C02273E82B00BA81D5 /* runtimeKit.m */; };
+		5ADC58C922740C7300BA81D5 /* runtimeKit.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 5ADC58C822740C7300BA81D5 /* runtimeKit.xcconfig */; };
+		5ADC58CC22740D2000BA81D5 /* File.s in Sources */ = {isa = PBXBuildFile; fileRef = 5ADC58CB22740D2000BA81D5 /* File.s */; };
 		C91AC25363ABD8A689127341 /* libPods-runtimeKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FFDE8EBFD570A91F2A21E02 /* libPods-runtimeKit.a */; };
 /* End PBXBuildFile section */
 
@@ -34,6 +36,12 @@
 		570D20673929CCF1B43E41E0 /* Pods-runtimeKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-runtimeKit.release.xcconfig"; path = "Pods/Target Support Files/Pods-runtimeKit/Pods-runtimeKit.release.xcconfig"; sourceTree = "<group>"; };
 		5ADC58BF2273E82B00BA81D5 /* runtimeKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = runtimeKit.h; sourceTree = "<group>"; };
 		5ADC58C02273E82B00BA81D5 /* runtimeKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = runtimeKit.m; sourceTree = "<group>"; };
+		5ADC58C822740C7300BA81D5 /* runtimeKit.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = runtimeKit.xcconfig; sourceTree = "<group>"; };
+		5ADC58CA22740CB700BA81D5 /* Script.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = Script.sh; sourceTree = "<group>"; };
+		5ADC58CB22740D2000BA81D5 /* File.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = File.s; sourceTree = "<group>"; };
+		5ADC58CD22740D3100BA81D5 /* FileList.xcfilelist */ = {isa = PBXFileReference; lastKnownFileType = text.xcfilelist; path = FileList.xcfilelist; sourceTree = "<group>"; };
+		5ADC58CE22740D6900BA81D5 /* File.clp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.clips; path = File.clp; sourceTree = "<group>"; };
+		5ADC58D022740E0F00BA81D5 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		9FFDE8EBFD570A91F2A21E02 /* libPods-runtimeKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-runtimeKit.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -52,6 +60,11 @@
 		373328881E6132BC00FE7F0A = {
 			isa = PBXGroup;
 			children = (
+				5ADC58CA22740CB700BA81D5 /* Script.sh */,
+				5ADC58D022740E0F00BA81D5 /* README.md */,
+				5ADC58CB22740D2000BA81D5 /* File.s */,
+				5ADC58CD22740D3100BA81D5 /* FileList.xcfilelist */,
+				5ADC58CE22740D6900BA81D5 /* File.clp */,
 				373328931E6132BC00FE7F0A /* runtimeKit */,
 				373328921E6132BC00FE7F0A /* Products */,
 				427EF2B8BE8D336910836011 /* Pods */,
@@ -97,6 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				16FFDB7E4C71B57FC1FE5EE5 /* Pods-runtimeKit.debug.xcconfig */,
+				5ADC58C822740C7300BA81D5 /* runtimeKit.xcconfig */,
 				570D20673929CCF1B43E41E0 /* Pods-runtimeKit.release.xcconfig */,
 			);
 			name = Pods;
@@ -180,6 +194,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5ADC58C922740C7300BA81D5 /* runtimeKit.xcconfig in Resources */,
 				373328A71E6132BC00FE7F0A /* LaunchScreen.storyboard in Resources */,
 				373328A41E6132BC00FE7F0A /* Assets.xcassets in Resources */,
 				3733289F1E6132BC00FE7F0A /* Main.storyboard in Resources */,
@@ -219,6 +234,7 @@
 				5ADC58C12273E82B00BA81D5 /* runtimeKit.m in Sources */,
 				373328961E6132BC00FE7F0A /* main.m in Sources */,
 				373328A21E6132BC00FE7F0A /* runtimeKit.xcdatamodeld in Sources */,
+				5ADC58CC22740D2000BA81D5 /* File.s in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,7 +309,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -343,7 +359,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -352,7 +368,7 @@
 		};
 		373328AC1E6132BC00FE7F0A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 16FFDB7E4C71B57FC1FE5EE5 /* Pods-runtimeKit.debug.xcconfig */;
+			baseConfigurationReference = 5ADC58C822740C7300BA81D5 /* runtimeKit.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = GNJ7D82T3M;
@@ -386,7 +402,7 @@
 				373328AA1E6132BC00FE7F0A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		373328AB1E6132BC00FE7F0A /* Build configuration list for PBXNativeTarget "runtimeKit" */ = {
 			isa = XCConfigurationList;
@@ -395,7 +411,7 @@
 				373328AD1E6132BC00FE7F0A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 

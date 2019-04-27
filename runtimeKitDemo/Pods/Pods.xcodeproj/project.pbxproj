@@ -23,8 +23,20 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		5ADC58C222740B4A00BA81D5 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 7;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		07AA9FF1191049EE230260CE280CDB0D /* libPods-runtimeKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-runtimeKit.a"; path = "libPods-runtimeKit.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		07AA9FF1191049EE230260CE280CDB0D /* libPods-runtimeKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-runtimeKit.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		206BC4690D384044831BC8F2078AA0F8 /* runtimeKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "runtimeKit-prefix.pch"; sourceTree = "<group>"; };
 		47FCC5ACEBF5EA814DEA7896E1078C1A /* runtimeKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "runtimeKit-dummy.m"; sourceTree = "<group>"; };
 		504CF7914687C0357C499C817BABF744 /* runtimeKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = runtimeKit.h; path = runtimeKit/runtimeKit.h; sourceTree = "<group>"; };
@@ -32,8 +44,8 @@
 		6956EBFACD757FFF4CC72509A1AEF212 /* Pods-runtimeKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-runtimeKit-dummy.m"; sourceTree = "<group>"; };
 		8790F7C9D021074E99C92CAC2A6CFDAB /* runtimeKit.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = runtimeKit.m; path = runtimeKit/runtimeKit.m; sourceTree = "<group>"; };
 		9AD6E5F1DB328AB6D1673C3E4DE04028 /* runtimeKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = runtimeKit.xcconfig; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		BD9F87F2D38CB213B1452394A1171012 /* libruntimeKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libruntimeKit.a; path = libruntimeKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		BD9F87F2D38CB213B1452394A1171012 /* libruntimeKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libruntimeKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0F6AD4141EE8F1A20025124B2D96B0B /* Pods-runtimeKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-runtimeKit.debug.xcconfig"; sourceTree = "<group>"; };
 		F2BB3868BCA9DA5E356CD4C86A02422D /* Pods-runtimeKit-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-runtimeKit-acknowledgements.markdown"; sourceTree = "<group>"; };
 		F948529B6E4FE7A435ECFF39A4167475 /* Pods-runtimeKit-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-runtimeKit-acknowledgements.plist"; sourceTree = "<group>"; };
@@ -75,7 +87,6 @@
 				8790F7C9D021074E99C92CAC2A6CFDAB /* runtimeKit.m */,
 				32C42FCEFEB5F93B899541B97E5D1ED6 /* Support Files */,
 			);
-			name = runtimeKit;
 			path = runtimeKit;
 			sourceTree = "<group>";
 		};
@@ -181,6 +192,7 @@
 				470A101F614C8578D5331FC201480AFB /* Headers */,
 				AEF676316375DC4C042814119ECB2CDF /* Sources */,
 				0245AB12B6B55583F72EA3C801D5296A /* Frameworks */,
+				5ADC58C222740B4A00BA81D5 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -205,6 +217,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
@@ -301,8 +314,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 4.2;
 				SYMROOT = "${SRCROOT}/../build";
 			};
