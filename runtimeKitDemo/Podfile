@@ -1,10 +1,12 @@
 # Private Specs
-source 'https://github.com/yuanmenglong886/ymlSpecs'
+source 'https://github.com/yuanmenglong886/LibSpec'
 
 #Public Specs
 source 'https://github.com/CocoaPods/Specs.git'
 
-platform:ios,’8.0’
-target ‘runtimeKit’ do
+platform:ios,'8.0'
+target 'runtimeKit' do
 
+    pod 'runtimeKit'
+    #:path => '/Users/yuanmenglong/Desktop/workSpace/PodSpec/runtimeKit/runtimeKit.podspec'
 end

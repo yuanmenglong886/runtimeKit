@@ -170,16 +170,16 @@ static char  key;
      class_addProtocol(class, protocoName);
    }
 }
-//+ (void)addProperty:(id)property ToObject:(id)object
-//{
-////    static char  key;
-////      const char *key = [NSStringFromClass([object class]) cStringUsingEncoding:NSUTF8StringEncoding];
-//      objc_setAssociatedObject(object,&key,property, OBJC_ASSOCIATION_RETAIN);
-//}
-//+ (id)getValueFromProperty:(id )property withObject:(id) object
-//{
-//   return  objc_getAssociatedObject(object,&key);
-//}
++ (void)addProperty:(id)property ToObject:(id)object
+{
+//    static char  key;
+//      const char *key = [NSStringFromClass([object class]) cStringUsingEncoding:NSUTF8StringEncoding];
+      objc_setAssociatedObject(object,&key,property, OBJC_ASSOCIATION_RETAIN);
+}
++ (id)getValueFromProperty:(id )property withObject:(id) object
+{
+   return  objc_getAssociatedObject(object,&key);
+}
 /**
  *   向某一个类添加另一个类某一个方法的实现
  */

@@ -1,3 +1,16 @@
-PODFILE CHECKSUM: 2cff48181c7041a1b83bfb2d5a5acfb657b02b8d
+PODS:
+  - runtimeKit (1.0.0)
 
-COCOAPODS: 1.1.1
+DEPENDENCIES:
+  - runtimeKit
+
+SPEC REPOS:
+  https://github.com/yuanmenglong886/LibSpec:
+    - runtimeKit
+
+SPEC CHECKSUMS:
+  runtimeKit: 858d809b0d8921fa74aaccd2e4e907ef69d8317a
+
+PODFILE CHECKSUM: 07b5c78f96a980656351fa178274347fd5d532a6
+
+COCOAPODS: 1.6.1

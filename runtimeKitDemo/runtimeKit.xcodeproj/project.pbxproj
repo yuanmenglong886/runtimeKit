@@ -14,7 +14,7 @@
 		373328A21E6132BC00FE7F0A /* runtimeKit.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 373328A01E6132BC00FE7F0A /* runtimeKit.xcdatamodeld */; };
 		373328A41E6132BC00FE7F0A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 373328A31E6132BC00FE7F0A /* Assets.xcassets */; };
 		373328A71E6132BC00FE7F0A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 373328A51E6132BC00FE7F0A /* LaunchScreen.storyboard */; };
-		373328B41E61332D00FE7F0A /* runtimeKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 373328B31E61332D00FE7F0A /* runtimeKit.m */; };
+		5ADC58C12273E82B00BA81D5 /* runtimeKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ADC58C02273E82B00BA81D5 /* runtimeKit.m */; };
 		C91AC25363ABD8A689127341 /* libPods-runtimeKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FFDE8EBFD570A91F2A21E02 /* libPods-runtimeKit.a */; };
 /* End PBXBuildFile section */
 
@@ -31,9 +31,9 @@
 		373328A31E6132BC00FE7F0A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		373328A61E6132BC00FE7F0A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		373328A81E6132BC00FE7F0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		373328B21E61332D00FE7F0A /* runtimeKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = runtimeKit.h; sourceTree = "<group>"; };
-		373328B31E61332D00FE7F0A /* runtimeKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = runtimeKit.m; sourceTree = "<group>"; };
 		570D20673929CCF1B43E41E0 /* Pods-runtimeKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-runtimeKit.release.xcconfig"; path = "Pods/Target Support Files/Pods-runtimeKit/Pods-runtimeKit.release.xcconfig"; sourceTree = "<group>"; };
+		5ADC58BF2273E82B00BA81D5 /* runtimeKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = runtimeKit.h; sourceTree = "<group>"; };
+		5ADC58C02273E82B00BA81D5 /* runtimeKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = runtimeKit.m; sourceTree = "<group>"; };
 		9FFDE8EBFD570A91F2A21E02 /* libPods-runtimeKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-runtimeKit.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -70,7 +70,7 @@
 		373328931E6132BC00FE7F0A /* runtimeKit */ = {
 			isa = PBXGroup;
 			children = (
-				373328B11E61332D00FE7F0A /* runtimeKit */,
+				5ADC58BE2273E82B00BA81D5 /* runtimeKit */,
 				373328971E6132BC00FE7F0A /* AppDelegate.h */,
 				373328981E6132BC00FE7F0A /* AppDelegate.m */,
 				3733289A1E6132BC00FE7F0A /* ViewController.h */,
@@ -93,15 +93,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		373328B11E61332D00FE7F0A /* runtimeKit */ = {
-			isa = PBXGroup;
-			children = (
-				373328B21E61332D00FE7F0A /* runtimeKit.h */,
-				373328B31E61332D00FE7F0A /* runtimeKit.m */,
-			);
-			path = runtimeKit;
-			sourceTree = "<group>";
-		};
 		427EF2B8BE8D336910836011 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -109,6 +100,16 @@
 				570D20673929CCF1B43E41E0 /* Pods-runtimeKit.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		5ADC58BE2273E82B00BA81D5 /* runtimeKit */ = {
+			isa = PBXGroup;
+			children = (
+				5ADC58BF2273E82B00BA81D5 /* runtimeKit.h */,
+				5ADC58C02273E82B00BA81D5 /* runtimeKit.m */,
+			);
+			name = runtimeKit;
+			path = ../../runtimeKit;
 			sourceTree = "<group>";
 		};
 		C0BBF3AB20110C9B51EA167F /* Frameworks */ = {
@@ -130,8 +131,6 @@
 				3733288D1E6132BC00FE7F0A /* Sources */,
 				3733288E1E6132BC00FE7F0A /* Frameworks */,
 				3733288F1E6132BC00FE7F0A /* Resources */,
-				BB613BEE6EE4CDF510CCE38E /* [CP] Embed Pods Frameworks */,
-				C5265D2B007AEDFC8E94D6AC /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -148,7 +147,7 @@
 		373328891E6132BC00FE7F0A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0820;
+				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = yuanmenglong;
 				TargetAttributes = {
 					373328901E6132BC00FE7F0A = {
@@ -160,7 +159,7 @@
 			};
 			buildConfigurationList = 3733288C1E6132BC00FE7F0A /* Build configuration list for PBXProject "runtimeKit" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
@@ -196,43 +195,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-runtimeKit-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		BB613BEE6EE4CDF510CCE38E /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-runtimeKit/Pods-runtimeKit-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		C5265D2B007AEDFC8E94D6AC /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-runtimeKit/Pods-runtimeKit-resources.sh\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -244,7 +216,7 @@
 			files = (
 				3733289C1E6132BC00FE7F0A /* ViewController.m in Sources */,
 				373328991E6132BC00FE7F0A /* AppDelegate.m in Sources */,
-				373328B41E61332D00FE7F0A /* runtimeKit.m in Sources */,
+				5ADC58C12273E82B00BA81D5 /* runtimeKit.m in Sources */,
 				373328961E6132BC00FE7F0A /* main.m in Sources */,
 				373328A21E6132BC00FE7F0A /* runtimeKit.xcdatamodeld in Sources */,
 			);
@@ -276,20 +248,29 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -323,20 +304,29 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
